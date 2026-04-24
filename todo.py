@@ -26,8 +26,8 @@ def show_done():
     for task in done:
         print(f"✓ {task}")
 
-print("Simple To-Do List")
-print("-----------------")
+print("=== Simple To-Do List ===")
+print("-" * 25)
 add("Buy groceries")
 add("Read a book")
 add("Learn GitHub")
