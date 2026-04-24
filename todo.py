@@ -1,4 +1,5 @@
 todos = []
+done = []
 
 def show():
     if not todos:
@@ -14,6 +15,17 @@ def remove(number):
     task = todos.pop(number - 1)
     print(f"Removed: {task}")
 
+def mark_done(number):
+    task = todos.pop(number - 1)
+    done.append(task)
+    print(f"Done: {task}")
+
+def show_done():
+    if not done:
+        print("Nothing done yet.")
+    for task in done:
+        print(f"✓ {task}")
+
 print("Simple To-Do List")
 print("-----------------")
 add("Buy groceries")
@@ -21,5 +33,6 @@ add("Read a book")
 add("Learn GitHub")
 show()
 print()
-remove(1)
-show()
+mark_done(3)
+print("\nCompleted tasks:")
+show_done()
