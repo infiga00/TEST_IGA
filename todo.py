@@ -28,7 +28,7 @@ def show_done():
 
 print("=== Simple To-Do List ===")
 print("-" * 25)
-add("Buy groceries")
+add("Buy milk")
 add("Read a book")
 add("Learn GitHub")
 show()
